@@ -5,7 +5,7 @@
   </head>
     <body>
       <h1 id="title">Perfect Ice Cream</h1>
-      <p id="description">Let me know your favorite flavour!</p>
+      <p id="description">Tell me a little about yourself.</p>
       <form id="survey-form"><br>
 <!-- input -->
 <div class="input">
@@ -23,10 +23,15 @@
 <br>
 </div>
 <!-- dropdown -->
-<div class="dropdown">
-<label for="dropdown" id="dropdown-label">What is your favourite ice cream style?</label>
-<input type="dropdown" id="dropdown" placeholder="Select ice cream style"
-</div>
+<p>Describe an ice cream of your dreams!</p>
+<select id="dropdown" class="dropdown-choice" required>
+  <option value="0" disabled selected="selected">Select style</option>
+  <option value="cone">Cone</option>
+  <option value="stick">On stick</option>
+  <option value="bowl">In bowl</option>
+  <option value="torte">Torte</option>
+  <option value="other">Other</option>
+</select>
           </form>
     </body>
 </html>
