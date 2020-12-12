@@ -7,15 +7,26 @@
       <h1 id="title">Perfect Ice Cream</h1>
       <p id="description">Let me know your favorite flavour!</p>
       <form id="survey-form"><br>
-<label for="name" id="name-label">Name</label><br>
+<!-- input -->
+<div class="input">
+<label for="name" id="name-label"><b>Name</b></label><br>
 <br>
 <input type="text"  id="name" placeholder="Enter your name" required><br>
 <br>
-<label for="email" id="email-label">Email</label><br>
+<label for="email" id="email-label"><b>Email</b></label><br>
 <br>
 <input type="email" id="email" placeholder="Enter your email" required><br>
 <br>
+<label for="number id="number-label"><b>Age</b><em>(optional)</em></label><br>
+<br>
+<input min="1" max="99" type="number" id="number" placeholder="Enter your age"><br>
+<br>
+</div>
+<!-- dropdown -->
+<div class="dropdown">
+<label for="dropdown" id="dropdown-label">What is your favourite ice cream style?</label>
+<input type="dropdown" id="dropdown" placeholder="Select ice cream style"
+</div>
           </form>
     </body>
 </html>
-<!-- User Story #6 complete# -->
