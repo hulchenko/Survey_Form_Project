@@ -6,7 +6,7 @@
     <body>
       <center>
       <h1 id="title">Perfect Ice Cream</h1>
-      <p id="description">Tell me a little about yourself.</p>
+      <p id="description">Tell me a little bit about yourself.</p>
       <form id="survey-form"><br>
 <!-- input -->
 <div class="input">
@@ -45,8 +45,29 @@
 </div>
 <!-- checkbox buttons -->
 <p>Select preferred flavour:<p>
-
-          </form>
+<div class="checkbox">
+<label for="vanilla"><input id="vanilla" type="checkbox" value="1">Vanilla</label><br>
+<label for="chocolate"><input id="chocolate" type="checkbox" value="2">Chocolate</label><br>
+<label for="caramel"><input id="caramel" type="checkbox" value="3">Caramel</label><br>
+<label for="strawberry"><input id="strawberry" type="checkbox" value="4">Strawberry</label><br>
+<label for="cookiescream"><input id="cookiescream" type="checkbox" value="5">Cookies & Cream</label><br>
+<label for="mint"><input id="mint" type="checkbox" value="6">Mint</label><br>
+<label for="chocolatechipcookiedough"><input id="chocolatechipcookiedough" type="checkbox" value="7">Chocolate Chip Cookie Dough</label><br>
+<label for="butteredpecan"><input id="butteredpecan" type="checkbox" value="8">Buttered Pecan</label><br>
+<label for="strawberry"><input id="strawberry" type="checkbox" value="9">Strawberry</label><br>
+<label for="neapolitan"><input id="neapolitan" type="checkbox" value="10">Neapolitan</label><br>
+</div>
+<div class="textarea">
+  <p>Other <em>(if not listed)</em>:</p>
+<textarea
+  id="comments" name="comment" rows="4" columns="50" placeholder="I love my ice cream with..">
+</textarea>
+<div>
+  <br>
+<button id="submit" type="submit">Submit</button>
+</div>
+<br>
+</form>
         </center>
     </body>
 </html>

@@ -1,7 +1,20 @@
 h1 {
-color: red;
+background-color: red;
 }
 
 .radio {
     display: table;
+    margin-right: 130px;
+}
+
+.checkbox {
+  display: table;
+}
+
+.textarea {
+background-color: red;
+}
+
+#submit {
+  width: 20%;
 }
