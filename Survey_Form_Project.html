@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="Survey_Form_Project.css">
   </head>
     <body>
       <center>
       <h1 id="title">Perfect Ice Cream</h1>
-      <p id="description">Tell me a little bit about yourself.</p>
+      <p id="description">Describe an ice cream of your dreams:</p>
       <form id="survey-form"><br>
 <!-- input -->
-<div class="input">
+<div class="form-group">
   <label for="name" id="name-label"><b>Name</b></label><br>
     <br>
     <input type="text"  id="name" placeholder="Enter your name" required><br>
@@ -18,15 +20,14 @@
     <br>
     <input type="email" id="email" placeholder="Enter your email" required><br>
     <br>
-    <label for="number id="number-label"><b>Age</b><em>(optional)</em></label><br>
+    <label for="number" id="number-label"><b>Age</b><em>(optional)</em></label><br>
     <br>
     <input min="1" max="110" type="number" id="number" placeholder="Enter your age"><br>
     <br>
 </div>
 <!-- dropdown -->
-<h3>Describe an ice cream of your dreams!</h3>
 <p>Select preferred style:</p>
-<select id="dropdown" class="dropdown-choice" required>
+<select id="dropdown" class="form-group" required>
   <option value="0" disabled selected="selected">Select style</option>
   <option value="cone">Cone</option>
   <option value="stick">On stick</option>
@@ -36,7 +37,7 @@
 </select>
 <!-- radio buttons-->
 <p>Select preferred type:<p>
-  <div class="radio">
+  <div id="radio" class="form-group">
   <label for="ice cream"><input id="icecream" type="radio" name="radio-buttons">Ice Cream</label><br>
   <label for="gelato"><input id="gelato" type="radio" name="radio-buttons">Gelato</label><br>
   <label for="yogurt"><input id="yogurt" type="radio" name="radio-buttons">Frozen Yogurt</label><br>
@@ -45,7 +46,7 @@
 </div>
 <!-- checkbox buttons -->
 <p>Select preferred flavour:<p>
-<div class="checkbox">
+<div id="checkbox" class="form-group">
 <label for="vanilla"><input id="vanilla" type="checkbox" value="1">Vanilla</label><br>
 <label for="chocolate"><input id="chocolate" type="checkbox" value="2">Chocolate</label><br>
 <label for="caramel"><input id="caramel" type="checkbox" value="3">Caramel</label><br>
@@ -57,14 +58,14 @@
 <label for="strawberry"><input id="strawberry" type="checkbox" value="9">Strawberry</label><br>
 <label for="neapolitan"><input id="neapolitan" type="checkbox" value="10">Neapolitan</label><br>
 </div>
-<div class="textarea">
+<div class="form-group">
   <p>Other <em>(if not listed)</em>:</p>
 <textarea
   id="comments" name="comment" rows="4" columns="50" placeholder="I love my ice cream with..">
 </textarea>
 <div>
   <br>
-<button id="submit" type="submit">Submit</button>
+<button class="form-group" id="submit" type="submit">Submit</button>
 </div>
 <br>
 </form>
